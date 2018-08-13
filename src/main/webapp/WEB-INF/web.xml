@@ -4,6 +4,14 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
+	<filter>
+		<filter-name>ValidationFilter</filter-name>
+		<filter-class>com.jda.filter.ValidationFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ValidationFilter</filter-name>
+		<url-pattern>/registration</url-pattern>
+	</filter-mapping>
 	<servlet>
 		<servlet-name>SignUpController</servlet-name>
 		<servlet-class>com.jda.controller.SignUpController</servlet-class>
