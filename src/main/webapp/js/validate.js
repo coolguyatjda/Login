@@ -1,7 +1,7 @@
 function validate() {
 	var password = document.getElementById("password").value;
 	var confirmPassword = document.getElementById("reEnterPassword").value;
-	if (password == confirmPassword) {
+	if (password === confirmPassword) {
 		// document.getElementById("PasswordError").innerHTML = "Password
 		// MisMatch";
 		alert("Password match");
